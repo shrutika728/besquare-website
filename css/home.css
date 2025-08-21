@@ -224,24 +224,113 @@
 
 /* Fade-in text animation */
 .carousel-caption {
-    bottom: 20%;
+    bottom: 30%; /* Adjusted position */
     text-align: center;
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 1.5s ease-out; /* Slightly faster and different ease */
+    padding: 0 15%; /* Horizontal padding */
+    max-width: 900px; /* Limit caption width */
+    margin: 0 auto; /* Center the caption */
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
+    0% { opacity: 0; transform: translateY(30px); }
     100% { opacity: 1; transform: translateY(0); }
 }
 
-.carousel-caption h1, .carousel-caption h2, .carousel-caption p {
+.carousel-caption h2 {
+    font-size: 3.5rem; /* Larger font size */
+    font-weight: 700;
     color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+    margin-bottom: 15px;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem; /* Larger font size */
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Text shadow */
+    margin-bottom: 30px;
 }
 
 /* Custom navigation button colors */
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7); /* Lighter controls */
     border-radius: 50%;
+    padding: 20px; /* Larger hit area */
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    background-color: rgba(255, 255, 255, 1); /* Solid white on hover */
+}
+
+/* Carousel indicators */
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(255, 255, 255, 0.6); /* White indicators, slightly transparent */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #ff5e14; /* Active indicator is orange */
+    transform: scale(1.2); /* Active indicator slightly larger */
+}
+
+/* Responsive Carousel adjustments */
+@media (max-width: 992px) {
+    .carousel-caption {
+        bottom: 25%;
+        padding: 0 10%;
+    }
+    .carousel-caption h2 {
+        font-size: 2.8rem;
+    }
+    .carousel-caption p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 80vh; /* Shorter height on tablets */
+    }
+    .carousel-caption {
+        bottom: 20%;
+        padding: 0 5%;
+    }
+    .carousel-caption h2 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item {
+        height: 70vh; /* Even shorter on mobile */
+    }
+    .carousel-caption {
+        bottom: 15%;
+        padding: 0 2%;
+    }
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .carousel-caption p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        padding: 15px; /* Smaller controls on mobile */
+    }
 }
 /* Carousel Styling End */
 
@@ -492,9 +581,11 @@
 }
 
 .client-testimonial-card {
-    /* border-radius: 15px; */
-    padding: 20px;
-    backdrop-filter: blur(10px);
+    background: #ffffff; /* White background for the cards */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Increased padding */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Softer shadow */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     height: 100%;
     display: flex;
@@ -502,61 +593,78 @@
     justify-content: space-between;
     text-align: center;
     max-width: 800px; /* Limits card width on large screens */
-    flex: 1;
+    margin: 0 auto; /* Center the card within its column */
 }
 
 .client-testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px); /* More pronounced lift on hover */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
 }
 
 /* Quote Icon Inline */
 .client-testimonial-text {
-    font-size: 16px;
-    color: #333;
+    font-size: 17px; /* Slightly larger font size */
+    color: #444; /* Darker text for readability */
     font-style: italic;
+    line-height: 1.6; /* Improved line spacing */
+    margin-bottom: 20px; /* Space below text */
     display: flex;
     align-items: flex-start;
-    gap: 8px; /* Space between icon and text */
+    gap: 12px; /* Increased space between icon and text */
     text-align: left;
 }
 
 .client-testimonial-quote {
-    font-size: 22px;
+    font-size: 28px; /* Larger quote icon */
     color: #ff5e14;
-    margin-top: 4px; /* Align properly with text */
+    margin-top: 2px; /* Adjust alignment */
 }
 
 /* Author & Company */
 .client-testimonial-author {
     font-weight: bold;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 15px; /* Slightly larger font */
+    margin-top: 15px; /* More space above author name */
     color: #ff5e14;
 }
 
 .client-testimonial-company {
-    font-size: 12px;
-    color: #373535;
+    font-size: 13px; /* Slightly larger font */
+    color: #666; /* Softer color for company name */
 }
 
 /* Responsive Design */
 @media (max-width: 992px) { /* Tablets */
     .client-testimonial-title {
-        font-size: 24px;
+        font-size: 26px; /* Adjusted title size */
     }
 
     .client-testimonial-text {
-        font-size: 14px;
-    }
-
-    .client-testimonial-row {
-        flex-direction: column;
-        align-items: center;
+        font-size: 16px;
     }
 
     .client-testimonial-card {
-        width: 90%;
+        padding: 25px; /* Slightly less padding */
+    }
+}
+
+@media (max-width: 768px) { /* Small tablets and large phones */
+    .client-testimonial-title {
+        font-size: 24px;
+    }
+    .client-testimonial-text {
+        font-size: 15px;
+        flex-direction: column; /* Stack icon and text */
+        align-items: center;
+        text-align: center; /* Center text when stacked */
+    }
+    .client-testimonial-quote {
+        margin-bottom: 10px; /* Space below quote icon */
+        margin-top: 0; /* Remove top margin */
+    }
+    .client-testimonial-card {
+        padding: 20px;
+        width: 100%; /* Full width on smaller screens */
     }
 }
 
@@ -564,17 +672,9 @@
     .client-testimonial-title {
         font-size: 22px;
     }
-
     .client-testimonial-text {
         font-size: 14px;
-        flex-direction: column;
-        align-items: center;
     }
-
-    .client-testimonial-quote {
-        margin-bottom: 5px;
-    }
-
     .client-testimonial-card {
         padding: 15px;
     }
@@ -584,58 +684,78 @@
 /* Clients Section */
 
    .client-slider-section {
-    padding: 10px 0;
+    padding: 40px 0; /* Reduced padding top/bottom */
     text-align: center;
+    background: #f8f8f8;
 }
 
 .client-slider-title {
-    font-size: 26px;
+    font-size: 2.2rem; /* Slightly smaller title */
     text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #333;
+    font-weight: 700;
+    margin-bottom: 30px; /* Reduced space below title */
+    color: #1a237e;
+    position: relative;
+    display: inline-block;
+}
+.client-slider-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px; /* Adjusted underline position */
+    transform: translateX(-50%);
+    width: 50px; /* Reduced underline width */
+    height: 3px; /* Reduced underline height */
+    background-color: #ff5e14;
+    border-radius: 2px;
 }
 
 /* Slider Container */
 .client-slider {
     overflow: hidden;
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 0; /* Reduced padding for logos */
     position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); /* Softer shadow */
 }
 
 /* Slide Track */
 .client-slide-track {
     display: flex;
-    gap: 20px;
-    width: calc(170px * 22);
-    animation: client-scroll 15s linear infinite;
+    gap: 30px; /* Reduced gap between logos */
+    width: calc(180px * 22); /* This width needs to be adjusted if slide width changes */
+    animation: client-scroll 25s linear infinite;
 }
 
 /* Individual Slides */
 .client-slide {
-    width: 170px;
+    width: 150px; /* Reduced slide width */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    cursor: pointer; /* Indicate that clicking is possible */
+    padding: 10px; /* Reduced padding inside slide */
+    cursor: pointer;
 }
 
 /* Logo Images */
 .client-slide img {
-    width: 150px;
-    height: 80px;
+    width: 100%;
+    height: auto;
+    max-height: 70px; /* Reduced max height */
     object-fit: contain;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    filter: grayscale(40%);
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+    filter: grayscale(80%);
+    opacity: 0.7;
 }
 
 /* Hover Effects */
 .client-slide img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05); /* Slightly less zoom on hover */
     filter: grayscale(0%);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
 }
 
 /* Scrolling Animation */
@@ -646,20 +766,28 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .client-slide { width: 150px; }
-    .client-slide img { width: 130px; height: 70px; }
+    .client-slider-title { font-size: 2rem; }
+    .client-slide { width: 140px; } /* Adjusted slide width */
+    .client-slide-track { width: calc(140px * 22); } /* Adjusted track width */
+    .client-slide img { max-height: 60px; }
 }
 
 @media (max-width: 768px) {
-    .client-slide { width: 130px; }
-    .client-slide img { width: 110px; height: 60px; }
-    .client-slider-title { font-size: 22px; }
+    .client-slider-title { font-size: 1.8rem; margin-bottom: 25px; }
+    .client-slider-title::after { bottom: -6px; width: 40px; height: 2px; }
+    .client-slide { width: 120px; gap: 20px; } /* Adjusted slide width and gap */
+    .client-slide-track { width: calc(120px * 22); animation: client-scroll 20s linear infinite; }
+    .client-slide img { max-height: 50px; }
+    .client-slider { padding: 10px 0; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03); }
 }
 
 @media (max-width: 480px) {
-    .client-slide { width: 110px; }
-    .client-slide img { width: 100px; height: 50px; }
-    .client-slider-title { font-size: 20px; }
+    .client-slider-title { font-size: 1.4rem; margin-bottom: 20px; }
+    .client-slider-title::after { bottom: -4px; width: 30px; height: 1px; }
+    .client-slide { width: 100px; gap: 15px; } /* Adjusted slide width and gap */
+    .client-slide-track { width: calc(100px * 22); animation: client-scroll 15s linear infinite; }
+    .client-slide img { max-height: 40px; }
+    .client-slider { padding: 8px 0; }
 }
 
   /* Clients Section End */
