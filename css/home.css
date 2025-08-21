@@ -199,7 +199,7 @@
 /* Navbar Styling End */
 /* Carousel Styling */
 .carousel-item {
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -219,118 +219,29 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
 }
 
 /* Fade-in text animation */
 .carousel-caption {
-    bottom: 30%; /* Adjusted position */
+    bottom: 20%;
     text-align: center;
-    animation: fadeIn 1.5s ease-out; /* Slightly faster and different ease */
-    padding: 0 15%; /* Horizontal padding */
-    max-width: 900px; /* Limit caption width */
-    margin: 0 auto; /* Center the caption */
+    animation: fadeIn 2s ease-in-out;
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(30px); }
+    0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
 }
 
-.carousel-caption h2 {
-    font-size: 3.5rem; /* Larger font size */
-    font-weight: 700;
+.carousel-caption h1, .carousel-caption h2, .carousel-caption p {
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
-    margin-bottom: 15px;
-}
-
-.carousel-caption p {
-    font-size: 1.5rem; /* Larger font size */
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Text shadow */
-    margin-bottom: 30px;
 }
 
 /* Custom navigation button colors */
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgba(255, 255, 255, 0.7); /* Lighter controls */
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    padding: 20px; /* Larger hit area */
-    transition: background-color 0.3s ease;
-}
-
-.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
-    background-color: rgba(255, 255, 255, 1); /* Solid white on hover */
-}
-
-/* Carousel indicators */
-.carousel-indicators [data-bs-target] {
-    background-color: rgba(255, 255, 255, 0.6); /* White indicators, slightly transparent */
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 0 5px;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.carousel-indicators .active {
-    background-color: #ff5e14; /* Active indicator is orange */
-    transform: scale(1.2); /* Active indicator slightly larger */
-}
-
-/* Responsive Carousel adjustments */
-@media (max-width: 992px) {
-    .carousel-caption {
-        bottom: 25%;
-        padding: 0 10%;
-    }
-    .carousel-caption h2 {
-        font-size: 2.8rem;
-    }
-    .carousel-caption p {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .carousel-item {
-        height: 80vh; /* Shorter height on tablets */
-    }
-    .carousel-caption {
-        bottom: 20%;
-        padding: 0 5%;
-    }
-    .carousel-caption h2 {
-        font-size: 2.2rem;
-        margin-bottom: 10px;
-    }
-    .carousel-caption p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 576px) {
-    .carousel-item {
-        height: 70vh; /* Even shorter on mobile */
-    }
-    .carousel-caption {
-        bottom: 15%;
-        padding: 0 2%;
-    }
-    .carousel-caption h2 {
-        font-size: 1.5rem;
-        margin-bottom: 5px;
-    }
-    .carousel-caption p {
-        font-size: 0.9rem;
-        margin-bottom: 15px;
-    }
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-        padding: 15px; /* Smaller controls on mobile */
-    }
 }
 /* Carousel Styling End */
 
@@ -404,7 +315,7 @@
 /* Offering Start*/
 /* Offerings Section */
 .custom-offerings-section {
-    padding: 40px 0 60px 0;
+    padding: 10px 0 60px 0;
     background: linear-gradient(120deg, #f8fafc 60%, #e0e7ef 100%);
 }
 .custom-offerings-header {
