@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f9fb;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ev-banner {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 60px;
+  }
+
+  .ev-banner::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .ev-banner-text {
+    position: relative;
+    z-index: 2;
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .ev-banner-title {
+    color: #eef5f8;
+    font-size: 58px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .ev-section {
+    padding: 20px 20px;
+  }
+
+  .ev-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  .ev-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .ev-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .ev-list li::before {
+    content: "\f1b9";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #17a2b8;
+  }
+
+  .ev-img-box {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .ev-img-box:hover {
+    transform: scale(1.03);
+  }
+
+  @media (max-width: 768px) {
+    .ev-banner-title {
+      font-size: 36px;
+    }
+
+    .ev-title {
+      font-size: 24px;
+    }
+  }

@@ -1,0 +1,223 @@
+/* About Section */
+.about-section {
+    background: linear-gradient(to right, #eef2f3, #e3f2fd); /* Soft, modern gradient */
+    color: #333;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Title & Heading */
+.about-title {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ff5e14;
+}
+
+.about-sec-title h2 {
+    font-size: 24 px;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Two-Column Layout */
+.about-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    text-align: left;
+}
+
+.about-col {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+/* Buttons */
+.about-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ff5e14;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.about-btn:hover {
+    background: #8b3c17;
+    transform: scale(1.05);
+}
+
+/* Vision Box - Hidden on Small Screens */
+.about-vision-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-feature h3 {
+    font-size: 22px;
+    color: #ff5e14;
+    margin-bottom: 10px;
+}
+
+/* Icon */
+.about-icon {
+    font-size: 30px;
+    color: #ff5e14;
+    margin-right: 10px;
+
+}
+
+/* Future Goal Section */
+.about-future-goal {
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-future-goal h2 {
+    font-size: 28px;
+    color: #ff5e14;
+    margin-bottom: 15px;
+}
+
+/* Hide Vision & Mission on Small Screens */
+@media (max-width: 768px) {
+    .about-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-sec-title h2 {
+        font-size: 28px;
+    }
+
+    .about-future-goal h2 {
+        font-size: 24px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .about-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .about-vision-box {
+        display: none; /* Hides Vision & Mission on small screens */
+    }
+}
+ /* About Section End*/
+
+
+ /* Section Styling */
+ #ts-service-area {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #161515;
+    text-transform: uppercase;
+}
+
+.section-sub-title {
+    font-size: 1.5rem;
+    color: #393737 !important;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Service Box */
+.ts-service-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.ts-service-box:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.ts-service-box-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+.service-box-title {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.service-box-title a {
+    color: #ff5e14;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-box-title a:hover {
+    color: #ffb812;
+    text-decoration: underline;
+}
+
+.service-box-p {
+    font-size: 1rem;
+    color: #413636;
+    margin: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-sub-title {
+        font-size: 1.2rem;
+    }
+
+    .ts-service-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ts-service-box-img img {
+        margin-bottom: 10px;
+    }
+}

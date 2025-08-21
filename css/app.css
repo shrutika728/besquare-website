@@ -1,0 +1,47 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f8fb;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+
+  .web-banner {
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .web-banner-title {
+    font-size: 56px;
+    font-weight: 800;
+    color: #f8f6f3;
+  }
+
+  .web-section {
+    padding: 20px 0;
+  }
+
+  .web-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ff5e14;
+  }
+
+  .web-img {
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+  }
+
+  .web-img:hover {
+    transform: scale(1.03);
+  }
+
+  @media (max-width: 768px) {
+    .web-banner-title {
+      font-size: 36px;
+    }
+  }

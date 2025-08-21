@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Besquare Technologies</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+
+    <!-- Bootstrap & Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Orbit" rel="stylesheet"/>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/careers.css"/>
+
+
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="custom-navbar fixed-top">
+    <div class="custom-container">
+        <a class="custom-brand" href="index.html">
+            <img src="images/favicon.png" class="custom-logo" alt="Company Logo"/>
+            <div class="custom-title">
+                <span class="main-title">BESQUARE TECHNOLOGIES</span>
+                <span class="sub-title">PRIVATE LIMITED</span>
+            </div>
+        </a>
+        <button class="custom-toggler" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="custom-menu" id="menu">
+            <ul class="custom-nav">
+                <li><a href="index.html" >HOME</a></li>
+                <li><a href="about.html" >ABOUT US</a></li>
+                <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                <li class="custom-dropdown">
+                    <a href="#" >SERVICES <span class="dropdown-icon">▼</span></a>
+                    <ul class="custom-dropdown-menu">
+                        <li><a href="embedded.html">Embedded Systems Design</a></li>
+                        <li><a href="iot.html">Internet of Things (IoT)</a></li>
+                        <li><a href="ai.html">Artificial Intelligence</a></li>
+                        <li><a href="testing.html">Web/ App Testing</a></li>
+                        <li><a href="automobile.html">Automobile (EV)</a></li>
+                        <li><a href="app_development.html">Android / Web APP Development</a></li>
+                    </ul>
+                </li>
+                <li class="custom-dropdown">
+                    <a href="#" class="active">COMPANY <span class="dropdown-icon">▼</span></a>
+                    <ul class="custom-dropdown-menu">
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="leadership.html">LEADESHIP TEAM</a></li>
+                        <li><a href="careers.html"> CAREERS</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="custom-contact-btn">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- End Navigation Bar -->
+
+
+<!-- Banner -->
+<header class="career-banner" style="background: url('images/banner/01.jpg') center/cover no-repeat;
+">
+    <div>
+      <h1>Join Our Team</h1>
+      <p>Your opportunity to grow with innovation & impact</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section class="container py-5">
+    <h2 class="text-center fw-bold mb-4">Current Openings</h2>
+    <div class="row gy-4">
+
+      <!-- Job Cards -->
+      <div class="col-md-6 col-lg-4">
+        <div class="job-card">
+          <h4>Android Kernal Framework</h4>
+          <p><i class="fas fa-briefcase"></i> 4+ yrs | <i class="fas fa-map-marker-alt"></i> Hyderabad</p>
+          <button class="btn-apply" onclick="showApplyForm('Automation QA')">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="job-card">
+          <h4>Embedded System Developer</h4>
+          <p><i class="fas fa-briefcase"></i> 3+ yrs | <i class="fas fa-map-marker-alt"></i> Hyderabad</p>
+          <button class="btn-apply" onclick="showApplyForm('Product QA')">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="job-card">
+          <h4>Angular Developer</h4>
+          <p><i class="fas fa-briefcase"></i> 3+ yrs | <i class="fas fa-map-marker-alt"></i> Hyderabad</p>
+          <button class="btn-apply" onclick="showApplyForm('Angular Developer')">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="job-card">
+          <h4>Python Developer - ML Expertise</h4>
+          <p><i class="fas fa-briefcase"></i> 4+ yrs | <i class="fas fa-map-marker-alt"></i> Hyderabad</p>
+          <button class="btn-apply" onclick="showApplyForm('Python Developer - ML Expertise')">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="job-card">
+          <h4>Accessible Test & Developer</h4>
+          <p><i class="fas fa-briefcase"></i> 5+ yrs | <i class="fas fa-map-marker-alt"></i> Hyderabad</p>
+          <button class="btn-apply" onclick="showApplyForm('Accessible Test & Developer')">Apply Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apply Form -->
+    <div id="applyForm" class="apply-form mt-5 d-none">
+      <h3 class="fw-bold mb-3">Apply Now</h3>
+      <form action="https://formspree.io/f/xvgzldrz" method="POST" id="jobApplicationForm">
+        <input type="hidden" id="jobTitle" name="jobTitle" required>
+        <div class="mb-3">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-control" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Years of Experience</label>
+          <input type="text" class="form-control" name="experience" required>
+        </div>
+        <button type="submit" class="btn w-100" style="background-color: #ff5e14; color: #fff; border: none;">Submit Application</button>
+      </form>
+      <p id="successMessage" class="text-success mt-3 d-none">Application submitted successfully!</p>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="custom-footer text-center text-lg-start">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h6>Besquare Technologies</h6>
+                <p>Empowering Innovation, Driving Excellence: Transforming Ideas into Reality with Cutting-Edge Solutions.</p>
+            </div>
+
+            <!-- Services -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h6>Services</h6>
+                <ul class="list-unstyled">
+                    <li><a href="embedded.html">Embedded Systems Design</a></li>
+                    <li><a href="iot.html">IoT</a></li>
+                    <li><a href="ai.html">Artificial Intelligence</a></li>
+                    <li><a href="testing.html">Web/App Testing</a></li>
+                    <li><a href="automobile.html">Automobile (EV)</a></li>
+                    <li><a href="app_development.html">App Development</a></li>
+                </ul>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="col-md-6 col-lg-2 mb-4">
+                <h6>Useful Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <h6>Contact</h6>
+                <p><i class="fa fa-home me-2"></i> 4th Floor, Plot No.47, Madhapur, Hyderabad, Telangana - 500081</p>
+                <p><i class="fa fa-envelope me-2"></i> info@besquaretech.com</p>
+                <p><i class="fa fa-phone me-2"></i> +91 90325 63983</p>
+                <p>
+                    <a href="https://www.linkedin.com/company/besquaretech/" class="custom-linkedin" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a> besquaretech
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media & Copyright -->
+    <div class="container-fluid border-top pt-3">
+        <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                © 2025 Besquare Technologies. All Rights Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end custom-social-icons">
+                <a href="#" class="custom-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="custom-twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="custom-google"><i class="fa-brands fa-google"></i></a>
+                <a href="#" class="custom-instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/besquaretech/" class="custom-linkedin" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<!-- BOOTSTRAP JS  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="js/index.js"></script>
+<script src="js/careers.js"></script>
+
+</body>
+</html>

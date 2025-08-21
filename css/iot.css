@@ -1,0 +1,98 @@
+/* Banner Styling */
+.iot-banner-area {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 60px;
+  }
+
+  .iot-banner-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 100px 0;
+  }
+
+  .iot-banner-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  /* Section Styling */
+  .iot-section-wrapper {
+    padding: 20px 20px;
+    background-color: #f9f9f9;
+  }
+
+  .iot-section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .iot-custom-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .iot-custom-list li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+  }
+
+  .iot-custom-list li::before {
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #ff5e14;
+    position: absolute;
+    left: 0;
+  }
+
+  .iot-img-rounded {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+  }
+
+  .iot-img-rounded:hover {
+    transform: scale(1.03);
+  }
+
+  /* Process Section */
+  .iot-process-area {
+    padding: 20px 20px;
+    background: #fff;
+    text-align: center;
+  }
+
+  .iot-process-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    border-bottom: 4px solid #ff5e14;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
+  .iot-process-img-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+  }
+
+  .iot-process-img-wrapper img:hover {
+    transform: scale(1.03);
+  }
+
+  @media (max-width: 768px) {
+    .iot-banner-title,
+    .iot-process-title {
+      font-size: 28px;
+    }
+  }

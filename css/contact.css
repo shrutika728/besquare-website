@@ -1,0 +1,37 @@
+
+.contact-hero {
+    height: 300px;
+    margin-top: 60px;
+  }
+  
+  .contact-info-box {
+    background: #f8f9fa;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .contact-map iframe {
+    border-radius: 10px;
+  }
+  
+  .contact-form .form-control {
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 15px;
+  }
+  
+  .btn-gradient {
+    background: linear-gradient(to right, #ff5e14, #db997a);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  
+  .btn-gradient:hover {
+    background: linear-gradient(to left, #e7d91e, #ff5e14);
+    transform: translateY(-2px);
+  }

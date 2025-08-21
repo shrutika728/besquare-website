@@ -1,0 +1,44 @@
+/* Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.theme-toggle i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Project Card */
+.project-card {
+    background: #f7c57c1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Images */
+.project-images img {
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.project-images img:hover {
+    transform: scale(1.4);
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+    .project-card {
+        padding: 15px;
+    }
+}

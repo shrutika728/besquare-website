@@ -1,0 +1,99 @@
+.wat-banner-area {
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+  }
+
+  .wat-banner-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 100px 0;
+  }
+
+  .wat-banner-title {
+    font-size: 58px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+
+  .wat-section-wrapper {
+    padding: 20px 20px;
+    background-color: #fdfdfd;
+  }
+
+  .wat-section-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  .wat-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .wat-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .wat-list li::before {
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #007bff;
+  }
+
+  .wat-img-box {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .wat-img-box:hover {
+    transform: scale(1.03);
+  }
+
+  .wat-process-section {
+    background-color: #f0f9ff;
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  .wat-process-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #ff5e14;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #333;
+  }
+
+  .wat-process-img img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+
+  .wat-process-img img:hover {
+    transform: scale(1.03);
+  }
+
+  @media (max-width: 768px) {
+    .wat-banner-title {
+      font-size: 34px;
+    }
+
+    .wat-section-title {
+      font-size: 24px;
+    }
+  }
