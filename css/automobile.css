@@ -28,11 +28,12 @@ body {
   }
 
   .ev-banner-title {
-    color: #eef5f8;
-    font-size: 58px;
-    font-weight: 900;
-    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
   }
+
 
   .ev-section {
     padding: 20px 20px;

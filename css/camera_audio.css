@@ -1,0 +1,75 @@
+/* Banner Section */
+.camera-audio-banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.camera-audio-banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.camera-audio-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text readability */
+    z-index: 1;
+}
+
+.camera-audio-banner-title {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff; /* Changed text color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow for readability */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .camera-audio-banner {
+        height: 300px;
+        margin-top: 50px;
+    }
+    .camera-audio-banner-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .camera-audio-banner {
+        height: 250px;
+        margin-top: 40px;
+    }
+    .camera-audio-banner-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .camera-audio-banner {
+        height: 200px;
+        margin-top: 30px;
+    }
+    .camera-audio-banner-title {
+        font-size: 1.5rem;
+    }
+}

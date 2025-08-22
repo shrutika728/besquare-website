@@ -26,61 +26,71 @@
 </head>
 <body>
 <!-- Navigation Bar -->
-<nav class="custom-navbar fixed-top">
-    <div class="custom-container">
-        <a class="custom-brand" href="index.html">
+<nav class="custom-navbar fixed-top navbar navbar-expand-lg bg-light">
+    <div class="custom-container container-fluid">
+        <a class="custom-brand navbar-brand" href="index.html">
             <img src="images/favicon.png" class="custom-logo" alt="Company Logo"/>
             <div class="custom-title">
                 <span class="main-title">BESQUARE TECHNOLOGIES</span>
                 <span class="sub-title">PRIVATE LIMITED</span>
             </div>
         </a>
-        <button class="custom-toggler" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="custom-menu" id="menu">
-            <ul class="custom-nav">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="testimonials.html">TESTIMONIALS</a></li>
-                <li class="custom-dropdown">
-                    <a href="#">SERVICES <span class="dropdown-icon">▼</span></a>
-                    <ul class="custom-dropdown-menu">
-                        <li><a href="embedded.html">Embedded Systems Design</a></li>
-                        <li><a href="iot.html">Internet of Things (IoT)</a></li>
-                        <li><a href="ai.html">Artificial Intelligence</a></li>
-                        <li><a href="testing.html">Web/ App Testing</a></li>
-                        <li><a href="automobile.html">Automobile (EV)</a></li>
-                        <li><a href="app_development.html">Android / Web APP Development</a></li>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="custom-nav navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link " href="about.html">ABOUT US</a></li>
+                <li class="nav-item"><a class="nav-link" href="testimonials.html">TESTIMONIALS</a></li>
+                <li class="nav-item custom-dropdown dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">SERVICES</a>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li><a class="dropdown-item" href="embedded.html">Embedded Systems Design</a></li>
+                        <li><a class="dropdown-item" href="iot.html">Internet of Things (IoT)</a></li>
+                        <li><a class="dropdown-item" href="ai.html">Artificial Intelligence</a></li>
+                        <li><a class="dropdown-item" href="testing.html">Web/ App Testing</a></li>
+                        <li><a class="dropdown-item" href="automobile.html">Automobile (EV)</a></li>
+                        <li><a class="dropdown-item" href="app_development.html">Android / Web APP Development</a></li>
                     </ul>
                 </li>
-                <li class="custom-dropdown">
-                    <a href="#" class="active">COMPANY <span class="dropdown-icon">▼</span></a>
-                    <ul class="custom-dropdown-menu">
-                        <li><a href="about.html">ABOUT US</a></li>
-                        <li><a href="leadership.html">LEADERSHIP TEAM</a></li>
-                        <li><a href="careers.html"> CAREERS</a></li>
-                        <li><a href="contact.html">CONTACT US</a></li>
+                <li class="nav-item custom-dropdown dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">PRODUCTS</a>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li><a class="dropdown-item" href="camera_ai.html">cameras + AI</a></li>
+                        <li><a class="dropdown-item" href="camera_audio.html">Camera + Audio (with AI)</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html" class="custom-contact-btn">CONTACT US</a></li>
+                <li class="nav-item custom-dropdown dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">COMPANY</a>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                        <li><a class="dropdown-item" href="leadership.html">LEADESHIP TEAM</a></li>
+                        <li><a class="dropdown-item" href="careers.html"> CAREERS</a></li>
+                        <li><a class="dropdown-item" href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link custom-contact-btn" href="contact.html">CONTACT US</a></li>
             </ul>
         </div>
     </div>
 </nav>
 <!-- End Navigation Bar -->
+
 <!-- Banner -->
 <header class="leader-banner" style="background: url('images/leadership.png') center/cover no-repeat;
 ">
     <div>
-      <h1>Meet Our Leadership Team</h1>
+        <h1>Meet Our Leadership Team</h1>
     </div>
-  </header>
+</header>
 
 <!-- Profiles -->
-<section class="container py-5">
+<section class="container py-5 highlight-section">
     <div class="row justify-content-center g-4">
         <!-- Profile 1 -->
         <div class="col-md-6 col-lg-5 fade-in d-flex">
@@ -91,23 +101,17 @@
                         class="leader-profile-img"
                 />
                 <h3 class="leader-name">MADHUKAR SANDI</h3>
-                <p class="leader-key-role">Business Development Executive</p>
+                <p class="leader-key-role">Chief Executive Officer</p>
                 <p class="leader-profile-bio">
-                    With 19 years of experience in embedded Linux systems development, I am passionate about using
-                    open-source
-                    technologies to build innovative, scalable, and cost-effective solutions that drive business growth.
-                    As the
-                    Founder and Director of Besquare Technologies Pvt. Ltd., I lead a team delivering customized
-                    Linux-based
-                    solutions across industries, while also exploring ML/AI projects that solve real-world customer
-                    problems.<br><br>
-                    My expertise spans Linux kernel programming, device drivers, system integration, and working with
-                    hardware platforms like ARM. I have hands-on experience with technologies such as OpenEmbedded and
-                    Buildroot, and
-                    take a collaborative, client-focused approach to ensure each solution is robust, scalable, and easy
-                    to maintain.<br><br>
-                    Beyond my professional role, I actively promote open-source, mentor aspiring engineers, and
-                    contribute to initiatives supporting STEM education and career growth.
+                    <i><b>Building Smart Vision Systems for a Connected Tomorrow</b></i>
+                    with 19 years of experience in embedded Linux systems and a strong technical foundation built at
+                    Qualcomm, I co-founded Besquare Technologies Pvt. Ltd. to deliver AI-driven camera solutions and
+                    high-impact embedded systems for global product companies.<br><br>
+
+                    As CEO, I lead with a startup mindset—driving innovation in AI + camera technology, scalable
+                    Linux-based platforms, and staff augmentation services that help leading product companies
+                    accelerate delivery. I foster a culture of rapid execution, collaboration, and customer obsession
+                    while actively advocating open-source adoption and mentoring the next generation of tech leaders.
                 </p>
                 <span class="read-more-btn">Read More</span>
                 <div class="leader-linkedin-icon mt-2">
@@ -129,17 +133,20 @@
                 <h3 class="leader-name">KISHORE KUMAR CH</h3>
                 <p class="leader-key-role">Chief Technology Officer</p>
                 <p class="leader-profile-bio">
-                    Technology leader with 18 years of experience in mobile platforms and embedded systems, with deep
-                    expertise in camera drivers, Camera HAL, and Linux kernel development. Skilled in bring-up, porting,
-                    debugging, and system-level mobile architecture, with hands-on experience in bus protocols and
-                    advanced debugging tools. Proven track record in building and leading high-performing engineering
-                    teams, driving camera commercialization, and delivering large-scale solutions for Samsung devices.
-                    Experienced in global collaboration through multiple design and development engagements with Samsung
-                    HQ.
+                    A hands-on technology leader with 18 years at Samsung and OPPO, I bring deep expertise in camera
+                    modules, drivers, Camera HAL, and Linux kernel development. My career has been dedicated to pushing
+                    the limits of imaging and system-level innovation, resulting in more than 10 patents in the camera
+                    domain.<br><br>
+                    Fueled by a passion for edge AI, I joined BESQUARE to drive the next wave of AI+camera and AI+audio
+                    solutions. My vision blends proven industry expertise with the bold, fast-moving energy of a
+                    startup. From system bring-up and advanced debugging to optimization and large-scale
+                    commercialization, I thrive on transforming complex technologies into real-world impact.<br><br>
+                    At BESQUARE, I’m not just building products—I’m building a culture of innovation, inspiring a team
+                    that’s redefining what’s possible when AI meets embedded systems.
                 </p>
                 <span class="read-more-btn">Read More</span>
                 <div class="leader-linkedin-icon mt-2">
-                    <a href="https://www.linkedin.com" target="_blank">
+                    <a href="https://www.linkedin.com/in/kishore-kumar-667ba519/" target="_blank">
                         <i class="bi bi-linkedin"></i>
                     </a>
                 </div>
@@ -245,8 +252,16 @@
         // Read more toggle
         const readBtns = document.querySelectorAll(".read-more-btn");
         readBtns.forEach((btn) => {
+            const bio = btn.previousElementSibling; // Get the biography element
+
+            // Check if content overflows and adjust button visibility
+            if (bio.scrollHeight > bio.clientHeight) {
+                btn.style.display = 'inline-block';
+            } else {
+                btn.style.display = 'none';
+            }
+
             btn.addEventListener("click", () => {
-                const bio = btn.previousElementSibling;
                 bio.classList.toggle("expanded");
                 btn.textContent = bio.classList.contains("expanded")
                     ? "Read Less"

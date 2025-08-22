@@ -31,7 +31,7 @@ section {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif; /* A complementary heading font */
     font-weight: 700; /* Bold headings */
-    color: #1a237e; /* A strong, dark blue for headings */
+    color: #232542; /* A strong, dark blue for headings */
     margin-bottom: 20px;
 }
 
@@ -112,14 +112,10 @@ a:hover {
 
 /* Navbar Styling */
 .custom-navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.913);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 15px 20px;
+    padding: 0.5rem 1rem; /* Adjust padding for better spacing */
+    background: rgba(255, 255, 255, 0.95); /* Slightly less transparent */
+    backdrop-filter: blur(8px); /* Slightly less blur */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Softer shadow */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,11 +123,24 @@ a:hover {
     transition: 0.3s ease-in-out;
 }
 
+.custom-navbar.scrolled {
+    padding: 0.3rem 1rem; /* Smaller padding when scrolled */
+    background: rgba(255, 255, 255, 0.98); /* More opaque when scrolled */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow when scrolled */
+}
+
+.custom-navbar.scrolled-up {
+    transform: translateY(0); /* Ensure navbar is visible when scrolling up */
+}
+
+.custom-navbar.scrolled-down {
+    transform: translateY(-100%); /* Hide navbar when scrolling down */
+}
+
 /* Container */
 .custom-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+    /* No specific width needed here as Bootstrap's container-fluid handles it */
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,9 +154,9 @@ a:hover {
 }
 
 .custom-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    margin-right: 8px;
 }
 
 .custom-title {
@@ -157,21 +166,17 @@ a:hover {
 }
 
 .main-title {
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #ff5e14;
     text-transform: uppercase;
 }
 
 .sub-title {
-    font-size: 14px;
+    font-size: 0.8rem;
     color: #333;
 }
 
 /* Navigation Menu */
-.custom-menu {
-    display: flex;
-}
-
 .custom-nav {
     list-style: none;
     display: flex;
@@ -182,22 +187,23 @@ a:hover {
     position: relative;
 }
 
-.custom-nav a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #333;
-    padding: 10px 15px;
-    transition: 0.3s ease-in-out;
+.custom-nav .nav-item {
+    margin: 0 5px;
 }
 
-.custom-nav a:hover {
+.custom-nav .nav-link {
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.custom-nav .nav-link:hover,
+.custom-nav .nav-link.active {
     color: #ff5e14;
 }
 
-.custom-nav a.active {
-  color: #ff5e14 !important;
-  font-weight: bold;
-}
 /* Dropdown Menu */
 .custom-dropdown-menu {
     display: none;
@@ -206,9 +212,11 @@ a:hover {
     left: 0;
     background: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 10px;
-    width: 250px; /* Adjust width as needed */
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    background-color: #fff;
+    width: auto; /* Allow width to adjust to content */
+    max-width: 350px; /* Increased max-width to accommodate longer service names */
     z-index: 1000;
 }
 
@@ -217,7 +225,6 @@ a:hover {
     display: block;
     width: 100%;
     text-align: left;
-    padding: 8px 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Add separator */
 }
 
@@ -227,19 +234,21 @@ a:hover {
 }
 
 /* Dropdown links */
-.custom-dropdown-menu a {
-    display: block;
-    padding: 8px;
+.custom-dropdown-menu .dropdown-item {
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem; /* Consistent padding */
     color: #333;
     text-decoration: none;
     transition: 0.3s;
+    white-space: nowrap; /* Force text to stay on one line */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for hidden text */
 }
 
 /* Hover effect */
-.custom-dropdown-menu a:hover {
-    background: #ff5e14;
-    color: white;
-    border-radius: 3px;
+.custom-dropdown-menu .dropdown-item:hover {
+    background-color: #ff5e14;
+    color: #fff;
 }
 
 /* Show dropdown on hover */
@@ -247,58 +256,71 @@ a:hover {
     display: block;
 }
 
-
-/* Contact Button */
-.custom-contact-btn {
-    background: #ff5e14;
-    color: white !important;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.custom-contact-btn:hover {
-    background: #d74c10;
-}
-
-/* Mobile Menu Toggle */
-.custom-toggler {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.custom-toggler span {
-    width: 30px;
-    height: 4px;
-    background: #ff5e14;
-    margin: 5px;
-    transition: 0.3s;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .custom-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.9);
-        flex-direction: column;
-        display: none;
+/* Responsive Adjustments for Navbar */
+@media (max-width: 991.98px) {
+    .custom-navbar {
+        padding: 0.5rem 1rem;
     }
 
-    .custom-menu.show {
-        display: flex;
+    .custom-container {
+        flex-wrap: nowrap; /* Prevent wrapping of brand and toggler */
+    }
+
+    .custom-brand {
+        margin-right: auto; /* Push toggler to the right */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Push toggler to the right on small screens */
     }
 
     .custom-nav {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+        width: 100%;
+        align-items: flex-start; /* Align menu items to the left */
+        text-align: left;
     }
 
-    .custom-toggler {
-        display: flex;
+    .custom-nav .nav-item {
+        width: 100%;
+        border-bottom: 1px solid #eee; /* Separator for stacked items */
+        margin: 0;
+    }
+
+    .custom-nav .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    .custom-nav .nav-link {
+        padding: 10px 15px; /* Adjust padding for mobile links */
+    }
+
+    .custom-dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        background-color: #f8f8f8;
+        padding: 0;
+        margin-left: 15px; /* Indent mobile dropdown */
+    }
+
+    .custom-dropdown-menu .dropdown-item {
+        padding: 8px 25px; /* Adjust padding for mobile dropdown items */
+    }
+
+    /* Override Bootstrap's default dropdown display for mobile to use collapse */
+    .navbar-collapse .custom-dropdown:hover .custom-dropdown-menu {
+        display: block; /* Should be handled by Bootstrap JS toggle */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .custom-brand .main-title {
+        font-size: 0.9rem; /* Adjusted for better fit on small screens */
+    }
+
+    .custom-brand .sub-title {
+        font-size: 0.6rem; /* Adjusted for better fit on small screens */
     }
 }
 /* Navbar Styling End */
@@ -813,6 +835,7 @@ a:hover {
     background-color: black;
     color: #ffffff;
     padding: 40px 0;
+    margin-top: 50px; /* Add top margin to prevent overlap */
 }
 
 .custom-footer h6 {
@@ -847,6 +870,9 @@ a:hover {
 
 /* Responsive Footer */
 @media (max-width: 768px) {
+    .custom-footer {
+        margin-top: 30px; /* Adjust top margin for smaller screens */
+    }
     .custom-footer .row {
         text-align: center;
     }
@@ -1039,4 +1065,61 @@ a:hover {
     .facts-area-modern { min-height: 180px; }
     .facts-heading-underline { font-size: 1.1rem; }
     .facts-desc { font-size: 0.95rem; }
+}
+
+/* Camera + Audio (with AI) Banner Styles */
+.camera-audio-banner-area {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.camera-audio-banner-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text readability */
+    z-index: 1;
+}
+
+.camera-audio-banner-text {
+    position: relative;
+    z-index: 2;
+}
+
+.camera-audio-banner-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff; /* Changed text color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow for readability */
+}
+
+@media (max-width: 768px) {
+    .camera-audio-banner-area {
+        height: 300px;
+    }
+    .camera-audio-banner-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .camera-audio-banner-area {
+        height: 250px;
+    }
+    .camera-audio-banner-title {
+        font-size: 1.8rem;
+    }
 }

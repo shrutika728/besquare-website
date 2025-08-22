@@ -117,6 +117,14 @@
       transform: translateY(0);
     }
 
+    /* Highlight Section */
+    .highlight-section {
+        background-color: #f0f8ff; /* A light, subtle blue for highlighting */
+        padding: 60px 0; /* Adjust padding as needed */
+        border-radius: 15px;
+        margin-bottom: 40px;
+    }
+
     /* Responsive adjustments */
     @media (max-width: 768px) {
       .leader-banner {
