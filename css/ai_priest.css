@@ -1,0 +1,42 @@
+/* Floating image effect for subtle motion */
+.float-y {
+    animation: floatY 5s ease-in-out infinite;
+}
+@keyframes floatY {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+/* Soft glow on hover for feature cards */
+.glow-card {
+    transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+.glow-card:hover {
+    box-shadow: 0 12px 28px rgba(255,94,20,0.18);
+    transform: translateY(-6px);
+}
+
+/* Clean, responsive gradient background (no images) */
+.ai-priest-page {
+    background: linear-gradient(180deg, #fffaf4 0%, #fff1e6 40%, #ffe6d5 100%);
+}
+
+/* Hero card polish */
+.ap-hero-card {
+    background: rgba(255,255,255,0.96) !important;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(255,94,20,0.12);
+    border: 1px solid rgba(255,94,20,0.15);
+}
+
+/* Section title accent */
+.ap-section-title {
+    color: #ff5e14 !important;
+    letter-spacing: 0.3px;
+}
+
+/* Feature cards grid spacing */
+@media (max-width: 768px) {
+    .glow-card { margin-bottom: 8px; }
+}

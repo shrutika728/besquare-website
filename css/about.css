@@ -90,16 +90,39 @@
 /* Future Goal Section */
 .about-future-goal {
     margin-top: 40px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: url('../images/intelligence\ _camera1.jpeg') center/cover no-repeat;
+    padding: 40px 30px;
     border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
 }
 
-.about-future-goal h2 {
+.about-future-goal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+}
+
+.about-future-goal > * {
+    position: relative;
+    z-index: 1;
+}
+
+.about-future-goal h3 {
     font-size: 28px;
-    color: #ff5e14;
+    color: #ffffff;
     margin-bottom: 15px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.about-future-goal p {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
 }
 
 /* Hide Vision & Mission on Small Screens */
