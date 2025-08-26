@@ -23,10 +23,11 @@
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/ai_priest.css"/>
     <link rel="stylesheet" href="css/camera_audio.css"/> <!-- Specific styles for camera_audio -->
 
 </head>
-<body>
+<body class="ai-priest-page">
 
 <!-- Navigation Bar -->
 <nav class="custom-navbar fixed-top navbar navbar-expand-lg bg-light">
@@ -85,34 +86,49 @@
 </nav>
 <!-- End Navigation Bar -->
 
- <!-- Banner Section -->
- <div class="camera-audio-banner" data-animate="fade-in-up">
-    <img src="images/banner/camera_audio.jpeg" alt="Banner Image"/>
-    <h1 class="camera-audio-banner-title">Camera + Audio Solutions</h1>
-  </div>
-
-<!-- Main Content for Camera + Audio -->
-<section style="margin-top: 50px; padding: 20px 0;">
-    <div class="container">
-        <p class="text-center lead">Integrate advanced camera systems with high-fidelity audio and AI-driven analytics for comprehensive surveillance, monitoring, and interactive experiences. Our solutions enable real-time audio processing, sound event detection, and voice recognition alongside visual analysis, enhancing situational awareness and providing richer data for various applications.</p>
-        <div class="row mt-5">
-            <div class="col-md-6">
-                <h3>Intelligent Audio-Visual Monitoring</h3>
-                <p>Combine video surveillance with acoustic monitoring to detect anomalies, identify specific sound events (e.g., glass breaking, alarms, human speech patterns), and provide a holistic view of the environment.</p>
-                <ul>
-                    <li>Real-time sound event detection</li>
-                    <li>Voice activity detection</li>
-                    <li>Audio classification (e.g., speech, music, alarms)</li>
-                </ul>
+<!-- Hero / Intro -->
+<section class="py-5 mt-5">
+    <div class="container py-3">
+        <div class="row align-items-center">
+            <div class="col-lg-7 fade-in-up ap-hero-card" data-animate data-delay="0.05" style="padding: 24px;">
+                <h1 class="mb-3" style="color:#c25900;">Camera + Audio (with AI)</h1>
+                <p class="mb-0" style="font-size:1.05rem; color:#1f1f1f;">Integrate advanced camera systems with high-fidelity audio and AI analytics for comprehensive surveillance and interactive experiences. Real-time audio processing blends with visual analysis for richer situational awareness.</p>
             </div>
-            <div class="col-md-6">
-                <h3>Interactive AI Experiences</h3>
-                <p>Develop interactive systems that respond to both visual cues and spoken commands. Ideal for smart environments, customer service kiosks, and assistive technologies.</p>
-                <ul>
-                    <li>Voice command integration</li>
-                    <li>Emotion detection via voice and facial expressions</li>
-                    <li>Personalized user experiences</li>
-                </ul>
+            <div class="col-lg-5 mt-4 mt-lg-0 text-center scale-in" data-animate data-delay="0.15">
+                <img src="images/banner/camera_audio.jpeg" alt="Camera + Audio" class="img-fluid float-y" style="max-height:340px; object-fit:contain; background:#ffffff; border-radius:12px; padding:8px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="py-4">
+    <div class="container">
+        <h3 class="mb-3 fade-in-up ap-section-title" data-animate>Key Capabilities</h3>
+        <div class="row g-3">
+            <div class="col-md-6 fade-in-up" data-animate data-delay="0.05">
+                <div class="p-3 h-100 glow-card" style="background:#fff6ec; border-radius:10px;">
+                    <h5 class="mb-2">Intelligent Audio-Visual Monitoring</h5>
+                    <p class="mb-0">Detect anomalies and specific sound events while correlating with visual context for a holistic view.</p>
+                </div>
+            </div>
+            <div class="col-md-6 fade-in-up" data-animate data-delay="0.1">
+                <div class="p-3 h-100 glow-card" style="background:#fff6ec; border-radius:10px;">
+                    <h5 class="mb-2">Interactive AI Experiences</h5>
+                    <p class="mb-0">Respond to visual cues and spoken commands for smart environments and kiosks.</p>
+                </div>
+            </div>
+            <div class="col-md-6 fade-in-up" data-animate data-delay="0.15">
+                <div class="p-3 h-100 glow-card" style="background:#fff6ec; border-radius:10px;">
+                    <h5 class="mb-2">Sound Analytics</h5>
+                    <p class="mb-0">Voice activity detection, audio classification, and event triggering in real time.</p>
+                </div>
+            </div>
+            <div class="col-md-6 fade-in-up" data-animate data-delay="0.2">
+                <div class="p-3 h-100 glow-card" style="background:#fff6ec; border-radius:10px;">
+                    <h5 class="mb-2">System Integration</h5>
+                    <p class="mb-0">APIs for VMS, cloud, or on-prem workflows with flexible storage options.</p>
+                </div>
             </div>
         </div>
     </div>

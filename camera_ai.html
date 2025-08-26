@@ -23,10 +23,11 @@
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/ai_priest.css"/>
     <link rel="stylesheet" href="css/camera_ai.css"/> 
 
 </head>
-<body>
+<body class="ai-priest-page">
 
 <!-- Navigation Bar -->
 <nav class="custom-navbar fixed-top navbar navbar-expand-lg bg-light">
@@ -85,35 +86,49 @@
 </nav>
 <!-- End Navigation Bar -->
 
- <!-- Banner Section -->
- <div class="camera-ai-banner" data-animate="fade-in-up">
-    <img src="images/banner/camera_ai_banner.jpg" alt="Banner Image"/>
-    <h1 class="camera-ai-banner-title">Cameras + AI Solutions</h1>
-  </div>
-
-<!-- Main Content for Camera + AI -->
-<section style="margin-top: 50px; padding: 20px 0;">
-    <div class="container">
-        <p class="text-center lead">Our product integrates advanced camera systems with cutting-edge artificial intelligence to deliver real-time insights, automation, and decision-making. By combining high-resolution imaging with AI-driven analytics, we enable applications such as object detection, facial recognition, anomaly detection, and intelligent monitoring—helping businesses enhance efficiency, safety, and customer experience.</p>
-        <!-- Add specific content for Camera + AI here -->
-        <div class="row mt-5">
-            <div class="col-md-6">
-                <h3>Smart Surveillance</h3>
-                <p>Implement intelligent surveillance systems with AI-powered object detection, facial recognition, and anomaly detection for enhanced security.</p>
-                <ul>
-                    <li>Real-time object recognition</li>
-                    <li>Intruder alert systems</li>
-                    <li>Behavioral analytics</li>
-                </ul>
+<!-- Hero / Intro -->
+<section class="py-5 mt-5">
+    <div class="container py-3">
+        <div class="row align-items-center">
+            <div class="col-lg-7 fade-in-up ap-hero-card" data-animate data-delay="0.05" style="padding: 24px;">
+                <h1 class="mb-3" style="color:#c25900;">Cameras + AI Solutions</h1>
+                <p class="mb-0" style="font-size:1.05rem; color:#1f1f1f;">Our product integrates advanced camera systems with AI-driven analytics to deliver real-time insights, automation, and decision-making. From object and face detection to anomaly alerts, we help you enhance efficiency, safety, and customer experience.</p>
             </div>
-            <div class="col-md-6">
-                <h3>Automated Quality Control</h3>
-                <p>Utilize cameras and AI for automated inspection and quality control in manufacturing, reducing defects and improving efficiency.</p>
-                <ul>
-                    <li>Defect detection</li>
-                    <li>Precision measurement</li>
-                    <li>Automated sorting</li>
-                </ul>
+            <div class="col-lg-5 mt-4 mt-lg-0 text-center scale-in" data-animate data-delay="0.15">
+                <img src="images/banner/camera_ai_banner.jpg" alt="Cameras + AI" class="img-fluid float-y" style="max-height:340px; object-fit:contain; background:#ffffff; border-radius:12px; padding:8px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="py-4">
+    <div class="container">
+        <h3 class="mb-3 fade-in-up ap-section-title" data-animate>Key Capabilities</h3>
+        <div class="row g-3">
+            <div class="col-md-6 fade-in-up" data-animate data-delay="0.05">
+                <div class="p-3 h-100 glow-card" style="background:#fff6ec; border-radius:10px;">
+                    <h5 class="mb-2">Smart Surveillance</h5>
+                    <p class="mb-0">AI-powered object detection, facial recognition, and anomaly alerts for enhanced security.</p>
+                </div>
+            </div>
+            <div class="col-md-6 fade-in-up" data-animate data-delay="0.1">
+                <div class="p-3 h-100 glow-card" style="background:#fff6ec; border-radius:10px;">
+                    <h5 class="mb-2">Automated Quality Control</h5>
+                    <p class="mb-0">Automated inspection with defect detection, precision measurement, and intelligent sorting.</p>
+                </div>
+            </div>
+            <div class="col-md-6 fade-in-up" data-animate data-delay="0.15">
+                <div class="p-3 h-100 glow-card" style="background:#fff6ec; border-radius:10px;">
+                    <h5 class="mb-2">Real-time Analytics</h5>
+                    <p class="mb-0">Edge processing for low-latency insights and scalable deployment across sites.</p>
+                </div>
+            </div>
+            <div class="col-md-6 fade-in-up" data-animate data-delay="0.2">
+                <div class="p-3 h-100 glow-card" style="background:#fff6ec; border-radius:10px;">
+                    <h5 class="mb-2">Integration Ready</h5>
+                    <p class="mb-0">Flexible APIs and storage options for VMS, cloud, or on-prem systems.</p>
+                </div>
             </div>
         </div>
     </div>
